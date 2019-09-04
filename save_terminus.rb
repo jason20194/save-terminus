@@ -26,12 +26,13 @@ def main_menu(prompt,health)
                 over
             end
             health = StageTwo.run(health)
-            
             if health == 0
                 over
             end
         elsif main_menu_option == "About"
             puts "Ganondorf has put a curse on the world Terminus where time is reversed. To prevent the worlds destruction you must defeat Ganondorf in order to reverse the time back to normal. Make decisions every stage and survive all 3 stages to reach the final stage where you will fight Ganondorf to decide the fate of Terminus." 
+            #loop back to main menu
+            main_menu_option = prompt.select("Choose an option?", %w(Play About Quit)) 
         elsif main_menu_option == "Quit"
             puts `clear`
         end
