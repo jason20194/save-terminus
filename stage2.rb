@@ -24,7 +24,7 @@ module StageTwo
         elsif
             play_option == 2
             puts `clear`
-            puts "Health = #{health -= 25}
+            puts "Health = #{health -= 25}"
             puts "Stage = #{stage}"
             puts "You move towards the right direction. Luckily for you, the mirror on the right side appears to be cracked so it stops the laserbeam from reflecting at you. However you have taken some damage from the laserbeam from barely missing your face."
             return health
@@ -41,7 +41,7 @@ module StageTwo
             puts "Health = 0"
             health = 0
             puts "Stage = #{stage}"
-            puts "You try to duck down to avoid the laserbeam. However as it passes you it comes right back, since the mirrors reflect the laserbeams. The last thing you think about before suddenly falling to your demise is how easy that attack was to avoid. Spoke too soon didnt you?". 
+            puts "You try to duck down to avoid the laserbeam. However as it passes you it comes right back, since the mirrors reflect the laserbeams. The last thing you think about before suddenly falling to your demise is how easy that attack was to avoid. Spoke too soon didnt you?." 
             return health
         end
     end
