@@ -19,7 +19,7 @@ def main_menu(prompt,health)
             user_name = gets.chomp
             health = 100
             puts `clear`
-            puts "Hello #{user_name}. Welcome to the world of Terminus, where you must save the world from ending by defeating the evil king. Survive through the story and you will be able to reach the Evil King, who is responsible for all of this. Defeat the King in order to save your world. Decision making is crucial in this game, as choosing the wrong decisions can lead to uneventful results, and may even cause death. You will start off with 100 health. Once your health reaches 0 it is game over. So plan every decision very carefully. Please press enter to continue"
+            puts "Hello #{user_name}. Welcome to the world of Terminus, where you must save the world from ending by defeating the evil king Ganondorf, who has reversed time on this world. Survive through the story and ganondorfs minions and you will be able to reach him. Defeat the evil king in order to save your world. Decision making is crucial in this game, as choosing the wrong decisions can lead to health loss, and may even cause death. You will start off with 100 health. Once your health reaches 0 it is game over. So plan every move very carefully! Please press enter to continue"
 
             health = StageOne.run(health)
             if health == 0 
