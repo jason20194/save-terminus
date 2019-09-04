@@ -26,11 +26,10 @@ def main_menu(prompt,health)
             if health == 0
                 over
             end
-        elsif main_menu_option == About
-            puts "You are in the world named Terminus. Terminus has been invaded by many monsters. Your goal is to travel the world whilst fight off all the monsters all over Terminus and defeat the evil King and save the world from doom. 
-        "
-        break
-        elsif main_menu_option == Quit
+        elsif main_menu_option == "About"
+            puts "Ganondorf has put a curse on the world Terminus where time is reversed. To prevent the worlds destruction you must defeat Ganondorf in order to reverse the time back to normal. Make decisions every stage and survive all 3 stages to reach the final stage where you will fight Ganondorf to decide the fate of Terminus."
+        break 
+        elsif main_menu_option == "Quit"
             puts `clear`
         end
     end
