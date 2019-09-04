@@ -5,6 +5,7 @@ require 'pry'
 require_relative 'stage1'
 require_relative 'stage2'
 require_relative 'stage3'
+require_relative 'final_boss'
 require_relative 'gameover'
 prompt = TTY::Prompt.new
 font = TTY::Font.new(:standard)
@@ -31,6 +32,10 @@ def main_menu(prompt,health)
                 over
             end
             health = StageThree.run(health)
+            if health == 0
+                over
+            end
+            health = FinalBoss.run(health)
             if health == 0
                 over
             end
