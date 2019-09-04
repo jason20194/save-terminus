@@ -1,13 +1,12 @@
 module StageTwo
     def self.run(health)
         stage = 2
-
     while health != 0
         play_option = gets.chomp.to_i
         puts `clear`
         puts "Health = #{health}"
         puts "Stage = #{stage}"
-        puts "You arrive at the second stage which looks to be a place full of mirrors. The Gohma awaits. You can see its eyes glowing. Suddenly it launches a laserbeam at you. You must avoid this laserbeam or else its game over! Make a move:"
+        puts "You arrive at the second stage which looks to be a place full of mirrors. The Gohma awaits. You can see its eyes glowing. Suddenly it launches a laserbeam at you. You must avoid this laserbeam or else its game over! Make a move by typing the corresponding number:"
         #options
         puts "1) Move left"
         puts "2) Move right"

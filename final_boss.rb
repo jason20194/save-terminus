@@ -1,13 +1,12 @@
 module FinalBoss
     def self.run(health)
         stage = "final"
-        health = 100
     while health != 0
         play_option = gets.chomp.to_i
         puts `clear`
         puts "Health = #{health}"
         puts "Stage = #{stage}"
-        puts "You have made it this far into the adventure. However before you appears the evil King Ganondorf, who doesnt care about anything about you but your demise. Defeat the Evil Ganondorf. Luckily for you, you are able to find a potion right in front of you, which heals you to full health. What a perfect occasion! Pick a move:"
+        puts "You have made it this far into the adventure. However before you appears the evil King Ganondorf, who doesnt care about anything about you but your demise. Defeat the Evil Ganondorf. Luckily for you, you are able to find a potion right in front of you, which heals you to full health. What a perfect occasion! Pick a move by typing in the corresponding number:"
         #options
         puts "1) Fire attack"
         puts "2) Sword slash"
@@ -42,7 +41,7 @@ module FinalBoss
             puts `clear`
             puts "Health = #{health}"
             puts "Stage = #{stage}"
-            puts "You throw a fairy at Ganondorf. At first the attack seems useless. Ganondorf laughs at you and just as he is about to finish you off, the fairy transforms into the most powerful sword known as Godsend, which can even defeat Gods. Just in time you are able to send one swift blow into Ganondorfs chest. Ganondorf stutters and suddenly falls over, with no sign of life. Ganondorf disappears into dust and drops an hourglass. You are able to shatter the hourglass which reverses time. At last, Terminus is free from the curse! Congratulations #{user_name}. You are Terminus's saviour!"
+            puts "You throw a fairy at Ganondorf. At first the attack seems useless. Ganondorf laughs at you and just as he is about to finish you off, the fairy transforms into the most powerful sword known as Godsend, which can even defeat Gods. Just in time you are able to send one swift blow into Ganondorfs chest. Ganondorf stutters and suddenly falls over, with no sign of life. Ganondorf disappears into dust and drops an hourglass. You are able to shatter the hourglass which reverses time. At last, Terminus is free from the curse! Congratulations! You are Terminus's saviour!"
             return health
         end
     end

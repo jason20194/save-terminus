@@ -6,7 +6,7 @@ module StageThree
         puts `clear`
         puts "Health = #{health}"
         puts "Stage = #{stage}"
-        puts "You arrive at Hyrule Castle, where the evil king resides. Whilst walking inside, you notice many guards patrolling the area. Also to your astonishment, there is a maze infront of you. There are many directions to take but you must choose one:"
+        puts "You arrive at Hyrule Castle, where the evil king resides. Whilst walking inside, you notice many guards patrolling the area. To your astonishment, there is a maze infront of you. There are many directions to take but you must choose one. Choose a direction by typing in the number:"
         #options
         puts "1) Straight"
         puts "2) Turn Left"
