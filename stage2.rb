@@ -7,41 +7,41 @@ module StageTwo
         puts `clear`
         puts "Health = #{health}"
         puts "Stage = #{stage}"
-        puts "You are in the the cave of ice. You quickly look around and behind you is a giant mutated polar bear who looks like he is about to kill you. Make a Decision!:"
+        puts "You arrive at the second stage which looks to be a place full of mirrors. The Gohma awaits. You can see its eyes glowing. Suddenly it launches a laserbeam at you. You must avoid this laserbeam or else its game over! Make a move:"
         #options
-        puts "1) Throw ice"
-        puts "2) Give it food"
-        puts "3) Growl"
-        puts "4) Play Dead"
+        puts "1) Move left"
+        puts "2) Move right"
+        puts "3) Use shield"
+        puts "4) Duck downwards"
         play_option = gets.chomp.to_i
         if  play_option == 1
-            puts `clear`
-            puts "Health = #{health -= 25}"
-            puts "Stage = #{stage}"
-            puts "You throw ice at the polar bear. He gets angry and chases you out of the cave. Whilst running for your life you slip over on ice and almost break your legs. You have lost some of your health"
-            return health
-        elsif
-            play_option == 2
             puts `clear`
             puts "Health = 0"
             health = 0
             puts "Stage = #{stage}"
-            puts "You give food to the polar bear but after eating the food it is still hungry. It eats you for dinner."
-            
+            puts "You move towards the left direction. However, little did you know that on the mirrors on the left reflect the Gohmas laserbeams. The laserbeam reflects from the leftside and hits you directly, killing you."
+            return health
+        elsif
+            play_option == 2
+            puts `clear`
+            puts "Health = #{health -= 25}
+            puts "Stage = #{stage}"
+            puts "You move towards the right direction. Luckily for you, the mirror on the right side appears to be cracked so it stops the laserbeam from reflecting at you. However you have taken some damage from the laserbeam from barely missing your face."
             return health
         elsif
             play_option == 3
             puts `clear`
-            puts "Health = #{health -= 50}"
-            puts "Stage = #{stage}"
-            puts "You growl pretending to be a polar bear. The mutated polar bear growls too and within a few seconds appears its whole family. They all trample over you. You have lost a substancial amount of health!"
+            puts "Health = 0"
+            health = 0
+            puts "You decide that the smart way to dodge the laserbeam is to hide behind your shield. However, little did you know your shield was made to protect you from only melee attacks. The laserbeam pierces through your shield and you die a very painful death."
             return health
         elsif
             play_option == 4
             puts `clear`
-            puts "Health = #{health}"
+            puts "Health = 0"
+            health = 0
             puts "Stage = #{stage}"
-            puts "You pretend to have been fatally injured and collapse. The polar bear walks away and once you see that he is completely out of your sight, you hurry out of the cave."
+            puts "You try to duck down to avoid the laserbeam. However as it passes you it comes right back, since the mirrors reflect the laserbeams. The last thing you think about before suddenly falling to your demise is how easy that attack was to avoid. Spoke too soon didnt you?". 
             return health
         end
     end
