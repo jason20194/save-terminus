@@ -51,7 +51,7 @@ module StageOne
         puts `clear`
         puts "Health = #{health}"
         puts "Stage = #{stage}"
-        puts "You are in the the Valley of Death. You quickly look around and behind you appears Ganondorfs henchman JabuJabu who is a giant killer fish. Defeat the fish to advance to the next stage. Choose a move:
+        puts "You are in the the Valley of Death. You quickly look around and behind you appears Ganondorfs henchman JabuJabu who is a giant killer fish. Defeat the fish to advance to the next stage. Choose a move:"
         #options
         puts "1) Spin slash"
         puts "2) Slingshot"
@@ -74,7 +74,7 @@ module StageOne
         elsif
             play_option == 3
             puts `clear`
-            puts "Health = "Health = 0"
+            puts "Health = 0"
             health = 0
             puts "Stage = #{stage}"
             puts "You throw a bomb at JabuJabu, however JabuJabu dives back into the water and laughs as the bomb detonates, killing you in the process." 

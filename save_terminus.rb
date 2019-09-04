@@ -20,15 +20,18 @@ def main_menu(prompt,health)
             health = 100
             puts `clear`
             puts "Hello #{user_name}. Welcome to the world of Terminus, where you must save the world from ending by defeating the evil king. Survive through the story and you will be able to reach the Evil King, who is responsible for all of this. Defeat the King in order to save your world. Decision making is crucial in this game, as choosing the wrong decisions can lead to uneventful results, and may even cause death. You will start off with 100 health. Once your health reaches 0 it is game over. So plan every decision very carefully. Please press enter to continue"
+
             health = StageOne.run(health)
+            if health == 0 
+                over
+            end
             health = StageTwo.run(health)
             
             if health == 0
                 over
             end
         elsif main_menu_option == "About"
-            puts "Ganondorf has put a curse on the world Terminus where time is reversed. To prevent the worlds destruction you must defeat Ganondorf in order to reverse the time back to normal. Make decisions every stage and survive all 3 stages to reach the final stage where you will fight Ganondorf to decide the fate of Terminus."
-        break 
+            puts "Ganondorf has put a curse on the world Terminus where time is reversed. To prevent the worlds destruction you must defeat Ganondorf in order to reverse the time back to normal. Make decisions every stage and survive all 3 stages to reach the final stage where you will fight Ganondorf to decide the fate of Terminus." 
         elsif main_menu_option == "Quit"
             puts `clear`
         end
