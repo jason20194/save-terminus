@@ -41,7 +41,7 @@ module StageThree
             puts "Health = 0"
             health = 0
             puts "Stage = #{stage}"
-            puts "You decide to go with the saying "no guts no glory". As you lunge towards a guard a trap from underneath activates, pulling you inside. The last thing that was heard is your scream as you fall 100 feet underneath the ground to your death."
+            puts "You decide to go with the saying no guts no glory. As you lunge towards a guard a trap from underneath activates, pulling you inside. The last thing that was heard is your scream as you fall 100 feet underneath the ground to your death."
             return health
         end
     end
