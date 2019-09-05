@@ -20,49 +20,24 @@ If the audience wants to use this application, they should refer to the README f
 - User will be greeted with the Main menu with 3 options: play, about and quit
 - User will select the option they want with arrow keys and press enter on the Play option to play.
 
-User to run the command from the terminal
+2) To run the game from the terminal
+- User will first open terminal
+- User will first change directory to the file
+- User will input ruby app.rb .
+- The game should run
 
-The application then makes the outgoing http call to an external API running a loop while we are waiting for the result of the http call
+3) To make a decision in the game
+- User will first initialize the game by pressing play
+- User will enter their name
+- User will be greeted with the introduction to the game
+- User will be asked to type a decision using numbers 1-4 as shown on the screen
+- Once user has typed in the number they press enter 
+- The user will see the outcome of the decision they have made. They might or might not lose the game based on their decision that they have made.
 
-Application then store the variable in its local scope then return the result to the main function to be printed on the terminal
+4) To quit the game
+- User will select the option quit
+- The game should exit and the user will be back in the terminal shell 
 
-Extra feature to include when the http call fails, it will use a fallback function to provide the joke
 
-Fetch a random Chuck Norris joke and save to a folder called "chuck_norris_jokes" in the current directory, if it's not there it's created on the fly
-
-After user select the command, a HTTP call is fired to the API
-
-After the call is resolved, we make a file object with the result as the content then we make a directory as specified and then save the file inside the directory
-
-if the directory exists, we will just save file in there instead
-
-Run both features from above without going into the app from the CLI with appropriate argument option of either '-R' or '-W'
-
-Same as the features above but instead of running off the menu system in the app
-
-The program will just run from command line once and finish
-
-Generate a random string and append the date the file is created to give unique file name
-
-a function that generate a random string and append the date as the name of the file to be stored in the local filesystem
-
-Offline support when the fetching api call fails
-
-When feature one fails the default hard coded joke function will return a Chuck Norris Joke
-
-User interaction and Experience
-User will find out how to interact with the app by again going through the documentation provided in README.md
-
-In the README, there are features listed for the app for user to try it out along with screenshots when they are using each features.
-
-User will interact with the features either by selecting a predetermined options or use a valid argument flags for the main application from the terminal.
-
-Error handling will be in three main areas: get a joke save to file and wrong command line arguments
-
-if the get joke feature fails, a fallback joke will be provided so user won't see any error messages.
-
-if the save file feature fails, user will get an message on the screen indicating that it failed.
-
-if user enters the wrong argument on the command line, error will be shown like this:
 
 
