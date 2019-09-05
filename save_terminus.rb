@@ -20,6 +20,7 @@ def main_menu(prompt, health)
   puts `clear`
   puts font.write('SAVE TERMINUS').yellow
   main_menu_option = prompt.select('Choose an option?', %w[Play About Quit])
+
   while main_menu_option != 'Quit'
     if main_menu_option == 'Play'
       puts `clear`
@@ -29,12 +30,16 @@ def main_menu(prompt, health)
       puts "Hello #{user_name}. Welcome to the world of Terminus, where you must save the world from ending by defeating the evil king Ganondorf, who has reversed time on this world. Survive through the story and Ganondorfs minions and you will be able to reach him. Defeat the evil king in order to save your world. Decision making is crucial in this game, as choosing the wrong decisions can lead to health loss, and may even cause death. You will start off with 100 health. Once your health reaches 0 it is game over. So plan every move very carefully! Please press enter to continue"
 
       health = StageOne.run(health)
-      over if health == 0
+      return over if health == 0
+
       health = StageTwo.run(health)
-      over if health == 0
+      return over if health == 0
+
       health = StageThree.run(health)
-      over if health == 0
+      return over if health == 0
+
       health = FinalBoss.run(health)
+
       if health == 0
         over
       else
@@ -48,7 +53,6 @@ def main_menu(prompt, health)
 
       # loop back to main menu
       main_menu_option = prompt.select('Choose an option?', %w[Play About Quit])
-    elsif main_menu_option == 'Quit'
     end
   end
 end

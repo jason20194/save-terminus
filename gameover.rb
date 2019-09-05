@@ -3,6 +3,7 @@ require 'colorize'
 require_relative 'save_terminus'
 
 def over
+    # binding.pry
     prompt = TTY::Prompt.new
     health = 0
     font = TTY::Font.new(:DOOM)
