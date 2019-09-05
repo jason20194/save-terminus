@@ -85,6 +85,7 @@ test_stage_two
 * [tty-font](https://github.com/piotrmurach/tty-font) - gem for font text
 * [colorize](https://github.com/fazibear/colorize) - gem for putting different colors on text
 * [pry](https://github.com/pry/pry) - gem for interactions and calculations on ruby
+* [rubocop](https://github.com/rubocop-hq/rubocop) - gem for organizing code into a neat format 
 
 
 ## Authors
