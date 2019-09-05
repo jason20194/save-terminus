@@ -1,95 +1,68 @@
-# Save-Terminus
 
-The aim of the project is to create a text based short adventure game using fundamentals of the computer language Ruby. In this project I created a text adventure game named Save Terminus. This game tells the story about an evil king who has come into the world and put a curse onto it, reversing the time of the world known as Terminus. In order to save the world, you the player will choose your own adventure and choices and try to survive the stages leading up to the final boss, which is the evil king himself. The aim of the game is to defeat him so that you can turn the world back to normal. 
+## Description of the application
+This terminal application is a simple text based adventure game which allows the user to play through a storyline, making decisions by inputting the numbers they want. The scope of the idea is pretty simplistic and very much has the same similarity as most adventure games: the basic plot is there is an evil being which takes over the world and the player must stop him. The application is run using ruby, as it is written in ruby language.
 
-## Getting Started
+## Identify the issue that it resolves
+This application was made purely for entertainment. Therefore it does not resolve any real life scenarios or issues.
 
-To begin, make sure that the ruby gem is installed. we will need all the gems listed below:
-1) tty-prompt
-2) tty-font
-3) pry
-4) colorize
+## Statement of Purpose and Scope
+The reason why I made this game was because I wanted to see how far my knowledge of ruby can go. It has only been 2 weeks since I learnt ruby, so at the same time I wanted to refresh my mind by trying to create a terminal based game. To me learning by doing is the most efficient method of learning there can ever be, especially since im a pattern learner. This may not be a very hard or advanced terminal application, however it is very good knowing that I am able to write basic ruby. If I want to be able to make much more complex apps in the future, this can be considered very good practice in preparation for it.
 
-After all the gems are installed, install VSCode. VSCode will work for both MacOS and Windows. Also ensure all the files of the app are installed, as some require others to be in the same directory in order for it to work. There are a total of 8 files which are required to get the game running (except test).
+## Target Audience
+This Terminal application is primarily targetting kids since most kids loves games. However, it can also be very helpful to people of any age who are interested in learning about the fundamentals of Ruby. Because this is not a very high level project, people with very little experience can break down how the game is made, which will may also help solidify their ruby skills. Another mention is that this program was built on a MacOS, so primarily it is made for MacOS users. As of current there are no other versions so Windows users may have trouble running it on their PCs.
 
-### Prerequisites
+## How will the audience use it
+If the audience wants to use this application, they should refer to the README file. It will explain what software is required to run the game. However, they should have VSCode and the gems installed, as that is the basics needed to get the game running.
 
-To install the gems, you would first need a terminal. In MacOS this is already built in but if on Windows, you must find a terminal app to download. 
+## Features
+1) To start playing the game
+- User will begin by running the game
+- User will be greeted with the Main menu with 3 options: play, about and quit
+- User will select the option they want with arrow keys and press enter on the Play option to play.
 
-### Installing
+User to run the command from the terminal
 
-1) Install VSCode by looking up the website and downloading it.
-2) Install the gems by typing in gem install (name_of_gem) eg gem install pry will install pry. You should have these commands executed:
-```
-    gem install tty-prompt
-    gem install tty-font
-    gem install pry
-    gem install colorize
+The application then makes the outgoing http call to an external API running a loop while we are waiting for the result of the http call
 
-```
-## Running the tests
+Application then store the variable in its local scope then return the result to the main function to be printed on the terminal
 
-Here is an example of running a test to see whether the health will be updated after stage 1 of the game:
+Extra feature to include when the http call fails, it will use a fallback function to provide the joke
 
-```
-def test_stage_one
-  # what we want the test to do
-  # test stage_one method to ensure that health is not equal to 100 once updated
+Fetch a random Chuck Norris joke and save to a folder called "chuck_norris_jokes" in the current directory, if it's not there it's created on the fly
 
-  # dummy data
-  health = 100
+After user select the command, a HTTP call is fired to the API
 
-  # call the method
-  updated_health = StageOne.run(health)
+After the call is resolved, we make a file object with the result as the content then we make a directory as specified and then save the file inside the directory
 
-  # write the test
-  if updated_health != 100
-    # the test passes
-    puts 'The test passes!'.colorize(:green)
-  # do not choose option 4 as health is not lost
-  else
-    # the test fails
-    puts 'The test fails!'.colorize(:red)
-  end
-end
-test_stage_one
-```
-Heres another example of running a test but this time we will be testing to see whether the variable health is an integer:
+if the directory exists, we will just save file in there instead
 
-```
-def test_stage_two
-  # what we want the test to do
-  # test stage_two method to ensure that an integer is being returned
+Run both features from above without going into the app from the CLI with appropriate argument option of either '-R' or '-W'
 
-  # dummy data
-  health = 100
+Same as the features above but instead of running off the menu system in the app
 
-  # call the method
-  updated_health = StageTwo.run(health)
+The program will just run from command line once and finish
 
-  # write the test
-  if updated_health.class == Integer
-    # the test passes
-    puts 'The test passes!'.colorize(:green)
-  else
-    # the test fails
-    puts 'The test fails!'.colorize(:red)
-  end
-end
-test_stage_two
-```
-## Built With
+Generate a random string and append the date the file is created to give unique file name
 
-* [VScode](https://code.visualstudio.com) - The web framework used
-* [tty-prompt](https://github.com/piotrmurach/tty-prompt) - gem for menu buttons
-* [tty-font](https://github.com/piotrmurach/tty-font) - gem for font text
-* [colorize](https://github.com/fazibear/colorize) - gem for putting different colors on text
-* [pry](https://github.com/pry/pry) - gem for interactions and calculations on ruby
-* [rubocop](https://github.com/rubocop-hq/rubocop) - gem for organizing code into a neat format 
+a function that generate a random string and append the date as the name of the file to be stored in the local filesystem
 
+Offline support when the fetching api call fails
 
-## Authors
+When feature one fails the default hard coded joke function will return a Chuck Norris Joke
 
-* **Jason Liu** - *Initial work* - [jason20194](https://github.com/jason20194)
+User interaction and Experience
+User will find out how to interact with the app by again going through the documentation provided in README.md
+
+In the README, there are features listed for the app for user to try it out along with screenshots when they are using each features.
+
+User will interact with the features either by selecting a predetermined options or use a valid argument flags for the main application from the terminal.
+
+Error handling will be in three main areas: get a joke save to file and wrong command line arguments
+
+if the get joke feature fails, a fallback joke will be provided so user won't see any error messages.
+
+if the save file feature fails, user will get an message on the screen indicating that it failed.
+
+if user enters the wrong argument on the command line, error will be shown like this:
 
 
