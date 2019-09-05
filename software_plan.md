@@ -84,6 +84,8 @@ test_stage_two
 * [tty-prompt](https://github.com/piotrmurach/tty-prompt) - gem for menu buttons
 * [tty-font](https://github.com/piotrmurach/tty-font) - gem for font text
 * [colorize](https://github.com/fazibear/colorize) - gem for putting different colors on text
+* [pry](https://github.com/pry/pry) - gem for interactions and calculations on ruby
+
 
 ## Authors
 
