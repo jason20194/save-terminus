@@ -1,5 +1,5 @@
-## Status Update 1
+## Status Update 1 4/9/19
 One of the biggest updates I came across whilst working on this game was yesterday. For some reason the health variable was giving me the wrong values instead of inputting the correct values. In Stage 1 when health was meant to be deducted as soon as it got to stage 2 the health went back to 100. This was very tricky for me and I had to get assistance for this. The fix for this was that my health variable was not a global. I moved the variable up the top before the methods were called. What this does is that it changes the health to be used for every part of the game. After that change and I tested it again it finally worked.
 
-## Status Update 2
+## Status Update 2 5/9/19
 The other biggest problem and update I came across was today whilst working on my game code, I managed to find a mini bug which confused me a lot. What happened was if the player died, the game loops back to the main menu after the game over appears which is meant to happen, however after pressing about and then pressing exit, the game proceeded to go to the next stage with health variable being nil. Through the help of our educators, after a long while I was able to fix this. What happened was I forgot to add the method return on the function gameover. Doing so will loop the game back to the beginning of the main menu. 
