@@ -6,7 +6,7 @@ module FinalBoss
         puts `clear`
         puts "Health = #{health}"
         puts "Stage = #{stage}"
-        puts "You have made it this far into the adventure. However before you appears the evil King Ganondorf, who doesnt care about anything about you but your demise. Defeat the Evil Ganondorf. Luckily for you, you are able to find a potion right in front of you, which heals you to full health. What a perfect occasion! Pick a move by typing in the corresponding number:"
+        puts "You have made it this far into the adventure. However before you appears the evil King Ganondorf, who doesnt care about anything about you but your demise. Defeat the Evil Ganondorf. Pick a move by typing in the corresponding number:"
         #options
         puts "1) Fire attack"
         puts "2) Sword slash"
