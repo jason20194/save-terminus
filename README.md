@@ -142,7 +142,9 @@ To install the gems, you would first need a terminal. In MacOS this is already b
     gem install tty-font
     gem install pry
     gem install colorize
+```
 
+### Running the application
 
 To run the app follow the steps below.
 
