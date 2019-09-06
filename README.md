@@ -63,7 +63,7 @@ Most of the user interaction will be located in the help file provided here on g
 
 2) To check for whether the winning screen will appear once we have beaten the game, the user must reach the end of the game with more than 0 health. When this happens the user would have defeated the last boss of the game, and will get the screen:
 
-![](jason-liu-T1A2-4-congrats)
+![](jason-liu-T1A2-4-congrats.png)
 
 # Software Implementation Plan
 
