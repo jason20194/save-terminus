@@ -25,9 +25,11 @@ def main_menu(prompt, health)
     if main_menu_option == 'Play'
       puts `clear`
       puts 'Hello and welcome. To begin, please enter your name'
+      print '> '
       user_name = gets.chomp
       while user_name == ""
       puts "Sorry I did not get your name. Please try again"
+      print '> '
       user_name = gets.chomp
       end
       puts `clear`

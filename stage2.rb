@@ -14,9 +14,11 @@ module StageTwo
       puts '2) Move right'
       puts '3) Use shield'
       puts '4) Duck downwards'
+      print "> "
       play_option = gets.chomp.to_i
       while play_option >= 5 
         puts "sorry that is not a valid option. Please type in an option between 1-4 followed by the enter key."
+        print "> "
         play_option = gets.chomp.to_i
         end
       if play_option == 1

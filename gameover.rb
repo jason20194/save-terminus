@@ -10,6 +10,7 @@ def over
     puts font.write("GAME OVER").red
     `say "you suck. Get good please"`
     puts "You have failed to save the world and the Evil king Ganondorf laughs as Terminus ends in doom. Care to try again? Type yes to continue."
+    print "> "
     continue = gets.chomp
     if continue == "yes"
         puts `clear`

@@ -11,6 +11,7 @@ def winner
   puts font.write('CONGRATULATIONS').green
   `say "wow you are so good"`
   puts "Congratulations on being Terminus's saviour. I hope you enjoyed this game! Feel free to play again and choose different decisions this time. Type ok to return to the main menu."
+  print "> "
   ok = gets.chomp
   if ok == 'ok'
     puts `clear`
