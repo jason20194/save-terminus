@@ -26,6 +26,10 @@ def main_menu(prompt, health)
       puts `clear`
       puts 'Hello and welcome. To begin, please enter your name'
       user_name = gets.chomp
+      while user_name == ""
+      puts "Sorry I did not get your name. Please try again"
+      user_name = gets.chomp
+      end
       puts `clear`
       puts "Hello #{user_name}. Welcome to the world of Terminus, where you must save the world from ending by defeating the evil king Ganondorf, who has reversed time on this world. Survive through the story and Ganondorfs minions and you will be able to reach him. Defeat the evil king in order to save your world. Decision making is crucial in this game, as choosing the wrong decisions can lead to health loss, and may even cause death. You will start off with 100 health. Once your health reaches 0 it is game over. So plan every move very carefully! Please press enter to continue"
 

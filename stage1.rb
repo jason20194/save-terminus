@@ -15,6 +15,10 @@ module StageOne
       puts '3) Throw a bomb'
       puts '4) Pick up golden sword'
       play_option = gets.chomp.to_i
+      while play_option >= 5 
+        puts "sorry that is not a valid option. Please type in an option between 1-4 followed by the enter key."
+        play_option = gets.chomp.to_i
+        end
       if play_option == 1
         puts `clear`
         puts "Health = #{health -= 25}"
